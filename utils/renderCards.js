@@ -7,7 +7,7 @@ function renderEmployeeCards(employee = initial) {
          <div class="card">
              <div class="bg-primary card-header text-dark">
              <h1>
-             ${employee.getName()?.split(' ')[0]}
+             ${employee.getName()?.trim().split(' ')[0]}
              </h1>
             <h2>
                  <i style="color : white;" class="fa-solid fa-user-tie mr-4"></i>
@@ -38,7 +38,7 @@ function renderEmployeeCards(employee = initial) {
          <div class="card">
              <div class="bg-primary card-header text-dark">
              <h1>
-             ${employee.getName()?.split(' ')[0]}
+             ${employee.getName()?.trim().split(' ')[0]}
              </h1>
                  <h2>
                  <i style="color : white;" class="fa-solid fa-user-gear mr-4"></i>
@@ -73,7 +73,7 @@ function renderEmployeeCards(employee = initial) {
           <div class="card">
               <div class="bg-primary card-header text-dark">
               <h1>
-              ${employee.getName()?.split(' ')[0]}
+              ${employee.getName()?.trim().split(' ')[0]}
               </h1>
               <h2>
               <i style="color : white;" class="fa-solid fa-school mr-4"></i>
